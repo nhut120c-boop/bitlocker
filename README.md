@@ -13,9 +13,9 @@ file  bitlocker-1.dd
 ```
 Ta có kết quả 
 <img width="1907" height="95" alt="image" src="https://github.com/user-attachments/assets/e000b7a7-c3dd-4c5a-9beb-2bfa141ce2dc" />
-Mình nhận ra dạng bài yêu cầu giải mã phân vùng bitLocker. 
+Mình nhận ra dạng bài yêu cầu giải mã phân vùng bitlocker. 
 
-Mình bắt đầu dùng công cụ bitlocker2john dể trích xuất hash của file 
+Mình bắt đầu dùng công cụ bitlocker2john để trích xuất hash của file 
 ```bash
 bitlocker2john -i bitlocker-1.dd > ma.txt
 ```
