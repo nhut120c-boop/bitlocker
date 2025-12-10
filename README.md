@@ -33,7 +33,7 @@ Ta dễ dàng thấy pass là jacqueline
 
 Tiếp theo mình tạo 1 thư mục để chứa dữ liệu chuẩn bị trích ra
 ```bash
-mkdir kq dl
+mkdir kq 
 ```
 Sau đó dùng lệnh 
 ```bash
