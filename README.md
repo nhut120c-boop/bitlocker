@@ -1,6 +1,8 @@
 # Challenge CTF Forensics
 Name challenge: Bitlocker-1
 Link: https://play.picoctf.org/practice/challenge/453?category=4&difficulty=2&page=1.
+Name user: Lê Minh Nhựt (AT22N0219).
+
 Đầu tiên mình tải file về máy ảo kali để tiện cho việc phân tích và giải mã.
 
 Sau khi tải mình được 1 file tên bitlocker-1.dd, xác định được đây là 1 file ổ đĩa, dựa vào tên bài thì mình đoán được 90% file đang bị khóa dưới dạng bitlocker.
