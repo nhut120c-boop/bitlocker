@@ -13,11 +13,11 @@ file  bitlocker-1.dd
 ```
 Ta có kết quả 
 <img width="1907" height="95" alt="image" src="https://github.com/user-attachments/assets/e000b7a7-c3dd-4c5a-9beb-2bfa141ce2dc" />
-Mình nhận ra dạng bài yêu cầu giải mã phân vùng BitLocker. 
+Mình nhận ra dạng bài yêu cầu giải mã phân vùng bitLocker. 
 
 Mình bắt đầu dùng công cụ bitlocker2john dể trích xuất hash của file 
 ```bash
-bitlocker2john -i bitlocker-1.dd > hash.txt
+bitlocker2john -i bitlocker-1.dd > ma.txt
 ```
 Khi trích xuất xong mình được 1 file ma.txt chứa toàn bộ mã băm của file gốc.
 <img width="1679" height="355" alt="image" src="https://github.com/user-attachments/assets/a524b586-452c-4a91-a7ef-f50417f88829" />
