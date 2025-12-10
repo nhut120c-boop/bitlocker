@@ -6,7 +6,7 @@ Name user: Lê Minh Nhựt (AT22N0219).
 
 Đầu tiên mình tải file về máy ảo kali để tiện cho việc phân tích và giải mã.
 
-Sau khi tải mình được 1 file tên bitlocker-1.dd, xác định được đây là 1 file ổ đĩa, dựa vào tên bài thì mình đoán được 90% file đang bị khóa dưới dạng bitlocker.
+Sau khi tải mình được 1 file tên bitlocker-1.dd, xác định được đây là 1 file img, dựa vào tên bài thì mình đoán được 90% file đang bị khóa dưới dạng bitlocker.
 Để chắc ăn mình xài lệnh
 ```bash
 file  bitlocker-1.dd
@@ -21,7 +21,7 @@ bitlocker2john -i bitlocker-1.dd > ma.txt
 ```
 Khi trích xuất xong mình được 1 file ma.txt chứa toàn bộ mã băm của file gốc.
 <img width="1679" height="355" alt="image" src="https://github.com/user-attachments/assets/a524b586-452c-4a91-a7ef-f50417f88829" />
-Sau đó mình dùng tiếp công cụ thứ 2 là john để crack file đó bằng data password khổng lồ từ file rockyou mình có sẵn.
+Sau đó mình dùng tiếp công cụ thứ 2 là john để crack file đó bằng wordlist từ file rockyou.txt mình có sẵn.
 ```bash
 john ma.txt --wordlist=rockyou.txt
 ```
@@ -39,7 +39,7 @@ Sau đó dùng lệnh
 ```bash
 sudo dislocker -V bitlocker-1.dd -ujacqueline -- kq
 ```
-Sau đó ta chuyển sang quyền root để truy cập máy vào kq
+Sau đó ta chuyển sang quyền root để truy cập vào folder kq
 ```bash
 sudo su
 ```
@@ -50,7 +50,7 @@ Xong mình dùng cd kq để vào kq, mình thấy 1 file dislocker-file, mình 
 
 Sau khi mount xong thì mình cd vào thư mục xuat để check file.
 <img width="517" height="183" alt="image" src="https://github.com/user-attachments/assets/19ee4444-8e55-429a-8f56-99209e253a8d" />
-Mình thấy 1 file flag.txt, cat thư mục đó bằng
+Mình thấy 1 file flag.txt, cat file đó bằng
 ```bash
 cat flag.txt
 ```
